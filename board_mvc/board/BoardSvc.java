@@ -85,7 +85,7 @@ public class BoardSvc {
 		
 		Connection con = null;
 		
-		String num 		= request.getParameter("num");
+		String num 	= request.getParameter("num");
 		String pageNo 	= request.getParameter("pageNum");
 		String viewPage = "board/content.jsp";
 		
@@ -131,8 +131,8 @@ public class BoardSvc {
 		
 		Connection con = null;
 
-		int num 		= Integer.parseInt((String)request.getParameter("num"));
-		int ref 		= Integer.parseInt((String)request.getParameter("ref"));
+		int num 	= Integer.parseInt((String)request.getParameter("num"));
+		int ref 	= Integer.parseInt((String)request.getParameter("ref"));
 		int re_step 	= Integer.parseInt((String)request.getParameter("re_step"));
 		int re_level 	= Integer.parseInt((String)request.getParameter("re_level"));
 		String writer 	= request.getParameter("writer");
@@ -140,7 +140,7 @@ public class BoardSvc {
 		String email 	= request.getParameter("email");
 		String content 	= request.getParameter("content");
 		String passwd 	= request.getParameter("passwd");
-		String ip 		= request.getRemoteAddr();
+		String ip 	= request.getRemoteAddr();
 		String viewPage = "/BoardCtrl?cmd=sltMul";
 		
 		int number = 0;
@@ -200,8 +200,8 @@ public class BoardSvc {
 	
 	public String artiInsertBe(HttpServletRequest request, HttpServletResponse response) {
 		
-		int num 		= 0;		//새 글일경우
-		int ref 		= 1;
+		int num 	= 0;		//새 글일경우
+		int ref 	= 1;
 		int re_step 	= 0;
 		int re_level 	= 0;
 		String coment 	= "";
@@ -244,7 +244,7 @@ public class BoardSvc {
 		
 		Connection con = null;
 		
-		int num 		= Integer.parseInt(request.getParameter("num"));
+		int num 	= Integer.parseInt(request.getParameter("num"));
 		String passwd 	= request.getParameter("passwd");
 		String writer 	= request.getParameter("writer");
 		String subject 	= request.getParameter("subject");
@@ -303,10 +303,10 @@ public class BoardSvc {
 		
 		Connection con = null;
 		
-		String num 		= request.getParameter("num");
+		String num 	= request.getParameter("num");
 		String pageNo 	= request.getParameter("pageNum");
 		String viewPage = "board/updateForm.jsp";
-		int nNum 		= Integer.parseInt(num);
+		int nNum 	= Integer.parseInt(num);
 		
 		int nPageNo;
 		
@@ -348,9 +348,9 @@ public class BoardSvc {
 		Connection con = null;
 		
 //		String pageNum 	= request.getParameter("pageNum");
-		int num 		= Integer.parseInt(request.getParameter("num"));
-		String pw 		= request.getParameter("passwd");
-		String pwC 		= null;			//비밀번호 확인용
+		int num 	= Integer.parseInt(request.getParameter("num"));
+		String pw 	= request.getParameter("passwd");
+		String pwC 	= null;			//비밀번호 확인용
 		String viewPage = "/BoardCtrl?cmd=sltMul";
 		
 		BoardDAO boardDao = null;
@@ -394,7 +394,7 @@ public class BoardSvc {
 	
 	public String deleteBe(HttpServletRequest request, HttpServletResponse response) {
 		
-		int num 		= Integer.parseInt(request.getParameter("num"));
+		int num 	= Integer.parseInt(request.getParameter("num"));
 		int pageNum 	= Integer.parseInt(request.getParameter("pageNum"));
 		String viewPage = "board/deleteForm.jsp";
 		

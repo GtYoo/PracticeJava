@@ -41,18 +41,18 @@ public class BoardDAO {
 		while(rs.next())
 		{
 			BoardDTO boardDto = new BoardDTO();
-			boardDto.setNum			(rs.getInt("num"));
-			boardDto.setWriter		(rs.getString("writer"));
-			boardDto.setEmail		(rs.getString("email"));
-			boardDto.setSubject		(rs.getString("subject"));
-			boardDto.setPasswd		(rs.getString("passwd"));
+			boardDto.setNum		(rs.getInt("num"));
+			boardDto.setWriter	(rs.getString("writer"));
+			boardDto.setEmail	(rs.getString("email"));
+			boardDto.setSubject	(rs.getString("subject"));
+			boardDto.setPasswd	(rs.getString("passwd"));
 			boardDto.setReg_date	(rs.getTimestamp("reg_date"));
 			boardDto.setReadcount	(rs.getInt("readcount"));
-			boardDto.setRef			(rs.getInt("ref"));
-			boardDto.setRe_step		(rs.getInt("re_step"));
+			boardDto.setRef		(rs.getInt("ref"));
+			boardDto.setRe_step	(rs.getInt("re_step"));
 			boardDto.setRe_level	(rs.getInt("re_level"));
-			boardDto.setContent		(rs.getString("content"));
-			boardDto.setIp			(rs.getString("ip"));
+			boardDto.setContent	(rs.getString("content"));
+			boardDto.setIp		(rs.getString("ip"));
 
 			list.add(boardDto);
 
@@ -77,18 +77,18 @@ public class BoardDAO {
 
 		while(rs.next())
 		{
-			boardDto.setNum			(rs.getInt("num"));
-			boardDto.setWriter		(rs.getString("writer"));
-			boardDto.setEmail		(rs.getString("email"));
-			boardDto.setSubject		(rs.getString("subject"));
-			boardDto.setPasswd		(rs.getString("passwd"));
+			boardDto.setNum		(rs.getInt("num"));
+			boardDto.setWriter	(rs.getString("writer"));
+			boardDto.setEmail	(rs.getString("email"));
+			boardDto.setSubject	(rs.getString("subject"));
+			boardDto.setPasswd	(rs.getString("passwd"));
 			boardDto.setReg_date	(rs.getTimestamp("reg_date"));
 			boardDto.setReadcount	(rs.getInt("readcount"));
-			boardDto.setRef			(rs.getInt("ref"));
-			boardDto.setRe_step		(rs.getInt("re_step"));
+			boardDto.setRef		(rs.getInt("ref"));
+			boardDto.setRe_step	(rs.getInt("re_step"));
 			boardDto.setRe_level	(rs.getInt("re_level"));
-			boardDto.setContent		(rs.getString("content"));
-			boardDto.setIp			(rs.getString("ip"));
+			boardDto.setContent	(rs.getString("content"));
+			boardDto.setIp		(rs.getString("ip"));
 
 		}
 		

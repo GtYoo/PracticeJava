@@ -36,7 +36,7 @@ public class BoardCtrl extends HttpServlet {
 		
 		BoardSvc svc = new BoardSvc();
 		
-		if("sltMul".equals(cmd))			//전체조회
+		if("sltMul".equals(cmd))		//전체조회
 		{
 			try {
 				viewPage = svc.ArtiList(request, response);	
