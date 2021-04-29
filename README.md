@@ -11,7 +11,9 @@
 
 ###### 계층형 구조를 가진 게시판 MVC Model-2 로 제작  
 
-###### Code view - [Board](https://github.com/GtYoo/PracticeJava/tree/main/board_mvc)  
+[Japanese README](https://github.com/GtYoo/PracticeJava/blob/main/README_Japanese.md)
+
+###### Code view - [Board](https://github.com/GtYoo/PracticeJava/tree/main/board_mvc)
 
 
 
