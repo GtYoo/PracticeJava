@@ -24,7 +24,7 @@
 		<table>
 			<tr>
 				<td align="right" colspan="2" bgcolor="<%=value_c%>">
-				<a href="list.jsp">글목록</a></td>
+				<a href="/Myjsp/BoardCtrl?cmd=sltMul&pageNum=1">글목록</a></td>
 			</tr>
 			<tr>
 				<td width="70" bgcolor="<%=value_c%>" align="center">이 름</td>
@@ -67,7 +67,7 @@
 				<td colspan=2 bgcolor="<%=value_c%>" align="center">
 					<input type="submit" value="글쓰기">
 					<input type="reset" value="다시작성">
-					<input type="button" value="목록보기" onClick="window.location='list.jsp'">
+					<input type="button" value="목록보기" onClick="document.location.href='/Myjsp/BoardCtrl?cmd=sltMul&pageNum=1'">
 				</td>
 			</tr>
 		</table>
